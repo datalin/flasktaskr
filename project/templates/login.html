@@ -2,12 +2,12 @@
 {% block content %}
 
 <h1>Welcome to FlaskTaskr</h1>
-<div class="lead">Please login to access your task list</div>
+<h3>Please sign in to access your task list</h3>
 
-<form method="post" action="/">
+<form class="form-signing" role="form" method="post" action="/">
 	{{ form.csrf_token }}
 		<p>
-		{{ form.name(placeholder="name")}}
+		{{ form.name(placeholder="email address")}}
 		<span class="error">
 			{% if form.name.errors %}
 				{% for error in form.name.errors %}
@@ -27,10 +27,11 @@
 		</span>
 		</p>
 	<button class="btn btn-sm btn-success" type="submit">Sign In</button>
+<br>
+<br>
+<p><em>Need an Account? </em><a href="/register">Signup!</a></p>
 </form>
 
-<br>
 
-<p><em>Need an Account? </em><a href="/register">Signup!</a></p>
 
 {% endblock %}

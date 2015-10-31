@@ -1,8 +1,8 @@
 {% extends "_base.html" %}
 {% block content %}
 <h1>Welcome to FlaskTaskr.</h1>
-<h3>Please register to Access the task list.</h3>
-	<form method="POST" action="">
+<h3>Please register to access the task list.</h3>
+	<form method="POST" action="/register/">
 		{{ form.csrf_token }}
 		<p>
 			{{ form.name(placeholder="name") }}
@@ -44,8 +44,9 @@
 				</span>					
 			{% endif %}
 		</p>
-		<button class="btn btn-sm btn-success" type="submit">Register</button>		
+		<button class="btn btn-sm btn-success" type="submit">Register</button>
+		<br>
+		<p><em>Already registered?</em> Click <a href="/">here</a> to login.</p>	
 	</form>
-	<br>
-	<p><em>Already registered?</em> Click <a href="/">here</a> to login.</p>
+	
 {% endblock %}
