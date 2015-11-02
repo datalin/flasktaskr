@@ -5,4 +5,4 @@ htmlcov
 __pycache__
 *.DS_Store
 .coverage
-*.db
+test.db
