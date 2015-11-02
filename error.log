@@ -1,0 +1,8 @@
+
+404 error at 02-11-2015 11-21-02: http://127.0.0.1:5000/does-not-exist
+500 error at 02-11-2015 11-21-02: http://127.0.0.1:5000/does-not-exist
+404 error at 02-11-2015 11-24-05: http://127.0.0.1:5000/does-not-exist
+500 error at 02-11-2015 11-24-05: http://127.0.0.1:5000/does-not-exist
+404 error at 02-11-2015 11-27-17: http://127.0.0.1:5000/does-not-exist
+500 error at 02-11-2015 11-27-17: http://127.0.0.1:5000/does-not-exist
+404 error at 02-11-2015 11:27:46: http://127.0.0.1:5000/does-not-exist
